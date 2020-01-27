@@ -1,8 +1,7 @@
-
 #!/usr/bin/python
 
 import sys, os
-sys.path.append(os.path.join(os.path.dirname(__file__), "/root/tools/basic/api_v1/"))
+sys.path.append(os.path.join(os.path.dirname(__file__), ""))
 
 from optparse    import OptionParser
 from prettytable import PrettyTable
@@ -18,18 +17,6 @@ from base import ApiCaller
 from base import KeystoneCredential
 from base import API_DEFAULT
 from base import AUTH_API_DEFAULT
-
-api_wait_timer = 0.1
-
-TARGET = ""
-ANALYTICS = TARGET
-CONTROLLERS = ['']
-USER = ""
-PASSWORD = ""
-TENANT = "admin"
-KEYSTONE = ""
-KEYSTONE_VER = "3"
-
 
 data_dir = "./"
 prog_ip  = re.compile("^\d+\.\d+\.\d+\.\d+$")
